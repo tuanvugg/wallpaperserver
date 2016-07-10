@@ -6,7 +6,7 @@ var mongoose =  require('mongoose');
 	http = require('http');
 	path = require('path');
 
-app.set('port',process.env.PORT || 9090);
+app.set('port',process.env.PORT || 8080);
 app.listen(9090);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
